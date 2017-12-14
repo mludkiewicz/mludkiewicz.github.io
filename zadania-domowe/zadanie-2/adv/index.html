@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 	<meta charset="UTF-8">
 	<title>2-formularz-html5-adv</title>
@@ -9,31 +10,34 @@
 <body>
 
 	<section>
-		<h1>A Simple Form</h1>
-		<h2>Form Fundamentals</h2>
-	
-	<form action="https://formspree.io/mludkiewicz@gmail.com" method="post" autocomplete="on">
-		<fieldset>
-			<legend>Customer Info</legend>
+		<header>
+			<h1>A Simple Form</h1>
+			<h2>Form Fundamentals</h2>
 
-			<p>
-				<label for="name">Name:</label>
-				<input type="text" id="name" placeholder="Enter your name" autofocus required>
-			</p>
+		</header>
 
-			<p>
-				<label for="tel">Telephone:</label>
-				<input type="tel" id="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-			</p>
-			<p>
-				<label for="email">E-mail:</label>
-				<input type="email" name="_replyto" id="email" placeholder="Enter your e-mail address" required multiple>
-			</p>
-		</fieldset>
-		<fieldset>
-			<legend>Books</legend>
+		<form action="https://formspree.io/mludkiewicz@gmail.com" method="post" autocomplete="on">
+			<fieldset>
+				<legend>Customer Info</legend>
 
-			<select name="books" id="books">
+				<p>
+					<label for="name">Name:</label>
+					<input type="text" id="name" placeholder="Enter your name" autofocus required>
+				</p>
+
+				<p>
+					<label for="tel">Telephone:</label>
+					<input type="tel" id="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+				</p>
+				<p>
+					<label for="email">E-mail:</label>
+					<input type="email" name="_replyto" id="email" placeholder="Enter your e-mail address" required multiple>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Books</legend>
+
+				<select name="books" id="books">
 					<option value="Books1">Title1</option>
 					<option value="Books2">Title2</option>
 					<option value="Books3">Title3</option>
@@ -41,17 +45,18 @@
 					<option value="Books5">Title5</option>
 				</select>
 
-			<label for="number">Quanity (Maximum 5):</label>
-			<input type="number" id="number" min="1" max="5"  >
+				<label for="number">Quanity (Maximum 5):</label>
+				<input type="number" id="number" min="1" max="5">
 
-		</fieldset>
-		
-		<p>
-		<input type="submit" value="Submit">
-		</p>
-		
-	</form>
+			</fieldset>
+
+			<p>
+				<input type="submit" value="Submit">
+			</p>
+
+		</form>
 	</section>
-	
+
 </body>
+
 </html>
