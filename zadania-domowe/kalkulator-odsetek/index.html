@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kalkulator odsetek</title>
+</head>
+
+<body>
+	<form>
+		<p><label for="wplata">Wpłata: <input type="number" id="wplata" value=0 min=100 /></label></p>
+		<p>
+			<label for="okres-kapitalizacji">Czętotliwość kapitalizacji:</label>
+			<select id="okres-kapitalizacji">
+			      <option value="12">Miesięcznie</option>
+			      <option value="4">Kwartalnie</option>
+			      <option selected="selcted" value="1">Rocznie</option>
+			      </select>
+		</p>
+		<p>
+			<label for="ilosc-lat">Ilosć lat: <input type="number" id="ilosc-lat" value=1 min=1 /></label>
+		</p>
+		<p>
+			<label for="oprocentowanie">Stopa zwrotu w % <input type="number" id="oprocentowanie" value=10 min=0/></label>
+		</p>
+		<label><input type="checkbox" id="podatek"> Uwzględnij
+podatek Belki 19%</label>
+		<p>
+			<button onclick="oblicz()">Oblicz</button>
+		</p>
+	</form>
+	<p id="wynik"></p>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- Kalkulator odsetek
+
+
+
+
+13. Wew. Funkcji oblicz() stwórz zmienną wynik, do której przypisz wynik działania funkcji
+obliczZysk(). Podczas wywołania funkcji przekaż do niej wyżej zdefiniowane zmienne z
+wartościami, które pobrałeś wcześniej z formularza.
+14. Do pustego paragrafu z id ‘wynik’ wstaw wyliczoną wartość-->
