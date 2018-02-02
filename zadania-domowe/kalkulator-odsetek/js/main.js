@@ -24,4 +24,5 @@ function oblicz() {
 	
 	var wynik = obliczZysk(wplata, iloscLat, okresKapitalizacji, oprocentowanie, podatek);
 	document.getElementById("wynik").innerHTML = wynik;
+	event.preventDefault();
 }
