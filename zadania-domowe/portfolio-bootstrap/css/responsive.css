@@ -4,13 +4,11 @@
 		background-color: #ffffff;
 	}
 
-	.navbar-light .navbar-nav .nav-link
-		{
+	.navbar-light .navbar-nav .nav-link {
 		color: #1ac056;
 	}
 
-	.navbar-light .navbar-nav .nav-link:hover
-		{
+	.navbar-light .navbar-nav .nav-link:hover {
 		color: #333333;
 	}
 
@@ -24,11 +22,10 @@
 		border: 1px solid #1ac056;
 	}
 	#contact {
-		text-align: center;
 		padding: 0 30px;
 		padding-top: 30px;
 	}
-	
+
 	form {
 		margin-top: 30px;
 	}
@@ -37,8 +34,8 @@
 
 
 @media (max-width: 768px) {
-#contact {
+	#contact {
 		text-align: center;
-		
+
 	}
 }
