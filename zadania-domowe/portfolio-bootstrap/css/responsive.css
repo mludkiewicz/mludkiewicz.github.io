@@ -24,7 +24,7 @@
 		border: 1px solid #1ac056;
 	}
 	#contact {
-		
+		text-align: center;
 		padding: 0 30px;
 		padding-top: 30px;
 	}
@@ -33,4 +33,12 @@
 		margin-top: 30px;
 	}
 
+}
+
+
+@media (max-width: 768px) {
+#contact {
+		text-align: center;
+		
+	}
 }
