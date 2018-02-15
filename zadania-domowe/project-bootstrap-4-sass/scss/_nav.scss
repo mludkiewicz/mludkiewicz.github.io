@@ -1,0 +1,32 @@
+/* Nav */
+
+.navbar {
+  transition: $animation;
+}
+
+.navbar-light {
+  .navbar-nav .nav-link, .navbar-brand {
+    color: $white-color;
+    transition: $animation;
+  }
+  .navbar-nav .nav-link:hover {
+    color: $turkus-color;
+  }
+  .navbar-brand {
+    &:hover {
+      color: $turkus-color;
+    }
+    font-family: $section-font;
+    font-size: 2em;
+  }
+  .navbar-nav .nav-link {
+    font-family: $second-font;
+  }
+}
+
+.scroll {
+  background-color: rgba(14, 216, 214, 0.7);
+  .navbar-nav .nav-link:hover, .navbar-brand:hover {
+    color: $second-color;
+  }
+}

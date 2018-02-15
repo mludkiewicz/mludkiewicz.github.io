@@ -1,0 +1,64 @@
+@import "variables";
+
+body {
+  font-family: $main-font;
+  color: $main-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $second-color;
+  font-family: $second-font;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-header {
+  margin-bottom: 70px;
+  p {
+    font-family: $section-font;
+    margin-top: 25px;
+  }
+}
+
+
+
+.social-icons .social-icon {
+  background-color: $second-color;
+  border: 1px solid $second-color;
+  border-radius: 50%;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.8em;
+  color: $white-color;
+  transition: $animation;
+  display: inline-block;
+  &:hover {
+    background-color: $turkus-color;
+    border: 1px solid $turkus-color;
+  }
+}
+
+.btn-custom {
+  background-color: $turkus-color;
+  font-family: $second-font;
+  border: 1px solid $turkus-color;
+  transition: $animation;
+  &:hover {
+    background-color: $white-color;
+    color: $turkus-color;
+    border: 1px solid $turkus-color;
+  }
+}
+
+
+

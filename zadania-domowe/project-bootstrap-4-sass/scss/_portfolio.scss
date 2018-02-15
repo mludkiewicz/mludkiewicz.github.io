@@ -1,0 +1,39 @@
+#portfolio {
+  background-color: #f7f7f7;
+  .portfolio-image-holder {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: $animation;
+    }
+    &:hover img {
+      transform: scale(1.5);
+    }
+    .portfolio-mask {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(14, 216, 214, 0.6);
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white-color;
+      font-size: 2em;
+      opacity: 0;
+      transition: $animation;
+    }
+    &:hover .portfolio-mask {
+      opacity: 1;
+    }
+  }
+  .portfolio-item figcaption {
+    background-color: $white-color;
+    padding: 10px 0;
+  }
+}
